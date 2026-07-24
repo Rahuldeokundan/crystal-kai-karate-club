@@ -1,12 +1,14 @@
 # Crystal Kai Karate Club Website
 
-Responsive single-page HTML website.
+Responsive static website for GitHub Pages.
 
-## Preview
-Open `index.html` directly, or run `python3 -m http.server 8080` inside this folder.
+## Deploy
 
-## Publish
-Upload this folder to Netlify, Cloudflare Pages, GitHub Pages, or any standard web hosting provider.
+1. Upload `index.html` and the `assets` folder to the root of your GitHub repository.
+2. In the repository, open **Settings → Pages**.
+3. Select **Deploy from a branch**, `main`, and `/(root)`.
+4. Keep the custom domain as `crystalkaikarateclub.com`.
 
-## Before publishing
-Confirm the spelling of names, titles, timings and address. Add the club email address when available.
+## Update an existing repository
+
+Replace the existing `index.html` and `assets` folder, then commit the changes. GitHub Pages will deploy the update automatically.
