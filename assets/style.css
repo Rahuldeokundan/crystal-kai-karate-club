@@ -76,7 +76,7 @@ h2 { font-size: clamp(50px, 6vw, 78px); }
 .hero-points { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 25px; }
 .hero-points span { border: 1px solid #343434; padding: 7px 11px; color: #c6c6c1; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
 .hero-emblem { min-width: 0; display: flex; justify-content: center; }
-.emblem-ring { position: relative; width: min(100%, 485px); aspect-ratio: 1; border-radius: 50%; padding: 9px; box-shadow: 0 30px 80px rgba(0,0,0,.72); }
+.emblem-ring { position: relative; width: min(100%, 485px); aspect-ratio: 1; border-radius: 50%; padding: 9px; background: linear-gradient(145deg, var(--green), #477900); box-shadow: 0 30px 80px rgba(0,0,0,.72); }
 .emblem-ring::before { content: ""; position: absolute; inset: -18px; border: 1px solid rgba(136,201,40,.25); border-radius: 50%; }
 .emblem-ring img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 9px solid #050505; }
 
@@ -97,7 +97,7 @@ h2 { font-size: clamp(50px, 6vw, 78px); }
 .benefit-card p { margin: 0; color: #aaa9a3; }
 .coach-grid { display: grid; grid-template-columns: minmax(300px, .86fr) minmax(0, 1.14fr); align-items: center; gap: clamp(45px, 8vw, 105px); }
 .coach-image-wrap { position: relative; max-width: 540px; }
-.coach-image-wrap img { aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% top; border: 9px solid var(--black); }
+.coach-image-wrap img {object-fit: cover; object-position: 50% top; border: 9px solid var(--black); }
 .coach-badge { position: absolute; right: -22px; bottom: 28px; padding: 16px 19px; background: var(--red); color: white; font-family: Impact, sans-serif; font-size: 21px; line-height: 1.02; text-transform: uppercase; }
 .coach-copy h2 { max-width: 720px; }
 .coach-role { color: #8e6519; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
