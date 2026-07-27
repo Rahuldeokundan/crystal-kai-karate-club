@@ -220,3 +220,88 @@ footer { padding: 31px 0; background: #050505; color: #999994; }
   .contact-card { padding-inline: 20px; }
   .floating-whatsapp { width: 54px; height: 54px; font-size: 13px; }
 }
+
+/* ===========================
+   Tournament Popup
+=========================== */
+
+.promo-popup{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.popup-backdrop{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.82);
+    backdrop-filter:blur(6px);
+}
+
+.popup-content{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    width:100%;
+    animation:popupScale .35s ease;
+}
+
+.popup-content img{
+
+    width:100%;
+    display:block;
+    border-radius:10px;
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.6);
+}
+
+.popup-close{
+    position:absolute;
+    top:-18px;
+    right:-18px;
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:28px;
+    color:#fff;
+    background:#df171c;
+    transition:.25s;
+}
+
+.popup-close:hover{
+    background:#ff0000;
+    transform:rotate(90deg);
+}
+
+.popup-hidden{
+    display:none;
+}
+
+@keyframes popupScale{
+    from{
+        transform:scale(.85);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+@media(max-width:768px){
+.popup-content{
+    max-width:95%;
+}
+
+.popup-close{
+    top:-14px;
+    right:-10px;
+}
+}
