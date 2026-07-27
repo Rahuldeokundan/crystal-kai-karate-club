@@ -305,3 +305,44 @@ footer { padding: 31px 0; background: #050505; color: #999994; }
     right:-10px;
 }
 }
+
+.training-gallery{
+    margin-top:35px;
+    width:100%;
+    max-width:480px;
+}
+.training-gallery h3{
+    text-align:center;
+    color:#fff;
+    margin-bottom:18px;
+    font-size:22px;
+}
+.main-image{
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 18px 45px rgba(0,0,0,.35);
+    margin-bottom:18px;
+}
+.main-image img{
+    width:100%;
+    transition:.4s;
+}
+.main-image:hover img{
+    transform:scale(1.05);
+}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+.gallery-grid img{
+    width:100%;
+    border-radius:14px;
+    transition:.35s;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+.gallery-grid img:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
