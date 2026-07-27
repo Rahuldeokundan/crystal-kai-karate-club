@@ -245,7 +245,7 @@ footer { padding: 31px 0; background: #050505; color: #999994; }
 .popup-content{
     position:relative;
     z-index:2;
-    max-width:700px;
+    max-width:400px;
     width:100%;
     animation:popupScale .35s ease;
 }
